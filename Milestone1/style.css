@@ -162,6 +162,26 @@ td, th{
         width: 15rem;
     }
     button[type="button"]{
-        font-size: 1rem;
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    :root{
+        font-size: 10px;
+    }
+    .form{
+        width: 78vw;
+        margin: auto;
+    }
+    input{
+        height: 1.7rem;
+    }
+    .submit{
+        font-size: 1.1rem;
+        border-radius: .4rem;
+        width: 15rem;
+    }
+    button[type="button"]{
+        font-size: .8rem;
     }
 }
