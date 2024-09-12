@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br>
+    <h1>Static Resume Builder By Ahmed Junaid</h1><br>
+    <form class="form" action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="">Name: </label><br>
+            <input type="text" placeholder="Please enter your name" required><br><br>
+            <label for="">Email: </label><br>
+            <input type="email" placeholder="Please enter your email" required><br><br>
+            <label for="">Phone: </label><br>
+            <input type="tel" placeholder="Please enter your phone number" required>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Education</legend>
+            <div class="education_inps">
+
+            </div>
+            <table class="education_table">
+                <tr>
+                    <th class="education">Education</th>
+                    <th>Field</th>
+                    <th>Grade</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+                <tr class="matriculation education_1">
+                    <td class="center">Matriculation: </td>
+                    <td><input class="matriculation_field" type="text"></td>
+                    <td><input class="matriculation_grade" type="text"></td>
+                    <td><input class="matriculation_institution" type="text"></td>
+                    <td><input class="matriculation_year" type="text"></td>
+                </tr>
+            </table>
+            <br>
+            <button class="add_more_education" type="button">+ Add Education</button>
+            <button class="remove_more_education" type="button">- Remove Education</button>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Experience</legend>
+
+            <table class="experience_table">
+                <tr>
+                    <th>Workplace</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Position</th>
+                </tr>
+                <tr class="experience_1">
+                    <td><input class="experience_workplace" type="text"></td>
+                    <td><input class="experience_year_from" type="text"></td>
+                    <td><input class="experience_year_to" type="text"></td>
+                    <td><input class="experience_position" type="text"></td>
+                </tr>
+            </table>
+            <br>
+            <button class="add_more_experience" type="button">+ Add Experience</button>
+            <button class="remove_more_experience" type="button">- Remove Experience</button>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Skills</legend>
+            <div class="skills_inps">
+                <input class="skill_inp skill_inp_1" type="text" placeholder="Add skill">
+
+            </div>
+            <button class="add_more_skill" type="button">+ Add Skills</button>
+            <button class="remove_more_skill" type="button">- Remove Skills</button>
+        </fieldset>
+        <br>
+        <button class="submit">Generate Resume</button>
+    </form>
+    <br><br>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
