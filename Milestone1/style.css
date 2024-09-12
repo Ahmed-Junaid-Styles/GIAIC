@@ -62,7 +62,7 @@ button[type="button"]{
     color: white;
     border: none;
     border-radius: 1.2rem;
-    font-size: 1.1rem;
+    font-size: 1.1vw;
     height: 2rem;
     cursor: pointer;
     margin: auto 4%;
@@ -101,6 +101,9 @@ td, th{
         font-size: 1.1rem;
         border-radius: .6rem;
     }
+    button[type="button"]{
+        font-size: .8rem;
+    }
 }
 @media screen and (max-width: 550px) {
     :root{
@@ -117,6 +120,9 @@ td, th{
         width: 14rem;
         font-size: 1.1rem;
         border-radius: .5rem;
+    }
+    button[type="button"]{
+        font-size: .8rem;
     }
 }
 @media screen and (max-width: 500px) {
@@ -135,6 +141,9 @@ td, th{
         font-size: 1.1rem;
         border-radius: .4rem;
     }
+    button[type="button"]{
+        font-size: .9rem;
+    }
 }
 @media screen and (max-width: 450px) {
     :root{
@@ -151,5 +160,8 @@ td, th{
         font-size: 1.1rem;
         border-radius: .4rem;
         width: 15rem;
+    }
+    button[type="button"]{
+        font-size: 1rem;
     }
 }
