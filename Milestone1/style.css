@@ -48,6 +48,22 @@ input[type="text"],input[type="tel"],input[type="email"], textarea{
     padding: .1rem .7rem;
     width: calc(100% - 2rem);
 }
+input[type="file"]{
+    padding-bottom: .6rem;
+    font-size: 1rem;
+    /* background-color: aliceblue; */
+}
+input[type="file"]::file-selector-button{
+    border: none;
+    color: aliceblue;
+    background-color: black;
+    opacity: .5;
+    border-radius: .5vw;
+    padding: .3rem 1rem;
+    font-size: 1rem;
+
+}
+
 .submit{
     width: 12rem;
     font-size: 1rem;
