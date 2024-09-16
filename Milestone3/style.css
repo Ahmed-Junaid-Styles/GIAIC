@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: aliceblue;
+}
+h1{
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+.form{
+    width: 60vw;
+    margin: auto;
+    border: none;
+    border-radius: .6rem;
+    padding: 2.3rem;
+    box-shadow: 1px 0px 3px black, -1px 0px 3px black;
+}
+.form > fieldset{
+    padding: 2vw 4vw;
+    font-size: 1.2rem;
+    
+}
+fieldset{
+    border-radius: 1rem;
+    background-color: rgba(149, 247, 247, 0.1);
+    max-width: 86%;
+}
+textarea{
+    max-width: 70%;
+}
+.submit{
+    text-align: center;
+}
+
+legend{
+    /* text-align: center; */
+    font-size: 1.3rem;
+    /* padding: 0 1rem; */
+}
+input{
+    height: 1.3rem;
+}
+input[type="text"],input[type="tel"],input[type="email"], textarea{
+    font-size: .9rem;
+    padding: .1rem .7rem;
+    width: calc(100% - 2rem);
+}
+input[type="file"]{
+    padding-bottom: .6rem;
+    font-size: 1rem;
+    /* background-color: aliceblue; */
+}
+input[type="file"]::file-selector-button{
+    border: none;
+    color: aliceblue;
+    background-color: black;
+    opacity: .5;
+    border-radius: .5vw;
+    padding: .3rem 1rem;
+    font-size: 1rem;
+
+}
+
+
+fieldset button[type="button"]{
+    width: 40% ;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 1.2rem;
+    font-size: 1.1vw;
+    height: 2rem;
+    cursor: pointer;
+    margin: auto 4%;
+    opacity: .5;
+}
+.generate{
+    width: 12rem;
+    font-size: 1rem;
+    height: 2rem;
+    cursor: pointer;
+    background-color: rgba(149, 247, 247, 0.1);
+    border-radius: .7rem;
+}
+
+.skill_inp{
+    margin: 0 0 1rem 0 ;
+}
+tr{
+    width: 100%;
+}
+/* .education{
+    width: 25%;
+} */
+td, th{
+    width: 20%;
+}
+
+
+
+
+@media screen and (max-width: 620px) {
+    :root{
+        font-size: 14px;
+    }
+    .form{
+        width: 70vw;
+        margin: auto;
+    }
+    input{
+        height: 1.5rem;
+    }
+    .submit{
+        width: 13rem;
+        font-size: 1.1rem;
+        border-radius: .6rem;
+    }
+    button[type="button"]{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    :root{
+        font-size: 13px;
+    }
+    .form{
+        width: 74vw;
+        margin: auto;
+    }
+    input{
+        height: 1.6rem;
+    }
+    .submit{
+        width: 14rem;
+        font-size: 1.1rem;
+        border-radius: .5rem;
+    }
+    button[type="button"]{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    :root{
+        font-size: 12px;
+    }
+    .form{
+        width: 78vw;
+        margin: auto;
+    }
+    input{
+        height: 1.6rem;
+    }
+    .submit{
+        width: 15rem;
+        font-size: 1.1rem;
+        border-radius: .4rem;
+    }
+    button[type="button"]{
+        font-size: .9rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    :root{
+        font-size: 11px;
+    }
+    .form{
+        width: 78vw;
+        margin: auto;
+    }
+    input{
+        height: 1.6rem;
+    }
+    .submit{
+        font-size: 1.1rem;
+        border-radius: .4rem;
+        width: 15rem;
+    }
+    button[type="button"]{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    :root{
+        font-size: 10px;
+    }
+    .form{
+        width: 78vw;
+        margin: auto;
+    }
+    input{
+        height: 1.7rem;
+    }
+    .submit{
+        font-size: 1.1rem;
+        border-radius: .4rem;
+        width: 15rem;
+    }
+    button[type="button"]{
+        font-size: .8rem;
+    }
+}
