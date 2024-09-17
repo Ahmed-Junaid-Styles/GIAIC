@@ -98,14 +98,9 @@ td, th{
     width: 20%;
 }
 
-
-
-
 @media screen and (max-width: 620px) {
-    :root{
-        font-size: 14px;
-    }
     .form{
+        font-size: 14px;
         width: 70vw;
         margin: auto;
     }
@@ -122,10 +117,8 @@ td, th{
     }
 }
 @media screen and (max-width: 550px) {
-    :root{
-        font-size: 13px;
-    }
     .form{
+        font-size: 13px;
         width: 74vw;
         margin: auto;
     }
@@ -142,10 +135,8 @@ td, th{
     }
 }
 @media screen and (max-width: 500px) {
-    :root{
-        font-size: 12px;
-    }
     .form{
+        font-size: 12px;
         width: 78vw;
         margin: auto;
     }
@@ -162,10 +153,8 @@ td, th{
     }
 }
 @media screen and (max-width: 450px) {
-    :root{
-        font-size: 11px;
-    }
     .form{
+        font-size: 11px;
         width: 78vw;
         margin: auto;
     }
@@ -182,10 +171,8 @@ td, th{
     }
 }
 @media screen and (max-width: 400px) {
-    :root{
-        font-size: 10px;
-    }
     .form{
+        font-size: 10px;
         width: 78vw;
         margin: auto;
     }
