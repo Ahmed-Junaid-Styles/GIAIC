@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="resume.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <br>
+    <h1>Static Resume Builder By Ahmed Junaid</h1><br>
+    <form class="form" action="" id="form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="">Name: </label><br>
+            <input type="text" placeholder="Please enter your name" required class="name"><br><br>
+            <label for="">Email: </label><br>
+            <input type="email" placeholder="Please enter your email" class="email" required><br><br>
+            <label for="">Phone: </label><br>
+            <input type="tel" placeholder="Please enter your phone number" class="phone_no" required>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Education</legend>
+            <div class="education_inps">
+
+            </div>
+            <table class="education_table">
+                <tr>
+                    <th class="education">Education</th>
+                    <th>Field</th>
+                    <th>Grade</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+                <tr class="matriculation education_1 education">
+                    <td class="level">Matriculation: </td>
+                    <td><input class="matriculation_field field" type="text"></td>
+                    <td><input class="matriculation_grade grade" type="text"></td>
+                    <td><input class="matriculation_institution institution" type="text"></td>
+                    <td><input class="matriculation_year year" type="text"></td>
+                </tr>
+            </table>
+            <br>
+            <button class="add_more_education" type="button">+ Add Education</button>
+            <button class="remove_more_education" type="button">- Remove Education</button>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Experience</legend>
+
+            <table class="experience_table">
+                <tr>
+                    <th>Workplace</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Position</th>
+                </tr>
+                <tr class="experience_1 experiences">
+                    <td><input class="experience_workplace" type="text"></td>
+                    <td><input class="experience_year_from" type="text"></td>
+                    <td><input class="experience_year_to" type="text"></td>
+                    <td><input class="experience_position" type="text"></td>
+                </tr>
+            </table>
+            <br>
+            <button class="add_more_experience" type="button">+ Add Experience</button>
+            <button class="remove_more_experience" type="button">- Remove Experience</button>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Skills</legend>
+            <div class="skills_inps">
+                <input class="skill_inp skill_inp_1" type="text" placeholder="Add skill">
+
+            </div>
+            <button class="add_more_skill" type="button">+ Add Skills</button>
+            <button class="remove_more_skill" type="button">- Remove Skills</button>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Profile Picture</legend>
+            <label for="">Select an appropriate picture for your resume</label><br>
+            <br>
+            <label for="choose-file">Choose File</label>
+            <div id="img-preview"></div>
+            <input type="file" id="choose-file" name="choose-file" accept="image/*" />
+            <br>
+
+        </fieldset>
+        <br><br>
+        <button class="generate" type="button"> Generate Resume</button>
+    </form>
+    <br><br>
+
+    <br><br>
+    <div class="generated_resume" id="complete_resume">
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="resume.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="invoice">
+        <div id="resume">
+            <div class="generated_resume" id="complete_resume">
+
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <center>
+        <button class="edit_resume_btn resume_btns" type="button">Edit Resume</button>
+    </center><br>
+    <center>
+        <button id="download-button" type="button">Download as PDF</button>
+    </center>
+
+    <script>
+        let HTML = localStorage.getItem("HTML")
+        let resume = document.getElementById("complete_resume")
+        resume.innerHTML = HTML
+
+        let edit_btn = document.querySelector(".edit_resume_btn")
+        let user_inp_tags = document.querySelectorAll(".value_from_user_input")
+
+        edit_btn.addEventListener("click", ()=>{
+            document.location.href = "index.html"
+        })
+
+        const button = document.getElementById('download-button');
+
+        function generatePDF() {
+            // Choose the element that your content will be rendered to.
+            const element = document.getElementById('invoice');
+            // Choose the element and save the PDF for your user.
+            html2pdf().from(element).save();
+        }
+
+        button.addEventListener('click', generatePDF);
+
+    </script>
+
+</body>
+
+</html>
