@@ -88,16 +88,14 @@ chooseFile.addEventListener("change", function () {
 });
 
 function getImgData() {
-    console.log("run")
     const files: any = chooseFile.files[0];
     if (files) {
         const fileReader = new FileReader();
         fileReader.readAsDataURL(files);
         fileReader.addEventListener("load", function () {
-            console.log("yesss")
             imgPreview.style.display = "block";
             imgPreview.innerHTML = `<img src="${this.result}" class="profile_pic" />`
-            console.log("yesss 2")
+
         });
     }
 }
@@ -156,11 +154,12 @@ generate_btn.addEventListener("click", () => {
             year: year?.value,
         }
         education_list.push(object)
-        console.log(education_list)
-        console.log(education_list.length)
     }
 
-    if (email_value && person_name_value && phone_number_value) {
+    let Image = document.querySelector("#choose-file") as HTMLInputElement
+    let isImage = Image.value
+
+    if (email_value && person_name_value && phone_number_value && isImage) {
 
         let HTML =
             `

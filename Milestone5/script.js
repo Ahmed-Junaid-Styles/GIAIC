@@ -47,16 +47,13 @@ chooseFile.addEventListener("change", function () {
     getImgData();
 });
 function getImgData() {
-    console.log("run");
     var files = chooseFile.files[0];
     if (files) {
         var fileReader = new FileReader();
         fileReader.readAsDataURL(files);
         fileReader.addEventListener("load", function () {
-            console.log("yesss");
             imgPreview.style.display = "block";
             imgPreview.innerHTML = "<img src=\"".concat(this.result, "\" class=\"profile_pic\" />");
-            console.log("yesss 2");
         });
     }
 }
@@ -107,10 +104,10 @@ generate_btn.addEventListener("click", function () {
             year: year === null || year === void 0 ? void 0 : year.value,
         };
         education_list.push(object);
-        console.log(education_list);
-        console.log(education_list.length);
     }
-    if (email_value && person_name_value && phone_number_value) {
+    var Image = document.querySelector("#choose-file");
+    var isImage = Image.value;
+    if (email_value && person_name_value && phone_number_value && isImage) {
         var HTML = "\n        <br><br>\n    <div class=\"resume\">\n        <br><br><br>\n        <section class=\"name_and_pic_container\">\n        <div class=\"name_and_pic\">\n        <div>\n        <!-- <img class=\"profile_pic\" src=\"Artboard 1 Mockup (1).jpg\" alt=\"\"> -->\n                </div>\n                <div class=\"name_div\">\n                    <h1 class=\"user_input_name\">".concat(person_name_value, "</h1>\n                </div>\n            </div>\n        </section>\n        <section class=\"resume_info\">\n            <span class=\"personal_info_and_skills\">\n            <div class=\"profile_pic_div\">\n                    <div class=\"image_pic\">").concat(image_profile_pic === null || image_profile_pic === void 0 ? void 0 : image_profile_pic.innerHTML, "</div><br><br><br><br>\n                </div><br><br><br>\n                <h2>Personal Information</h2><br>\n                <div class=\"heading\">Email</div><div class=\"email_value user_input_email\"> ").concat(email_value, "</div><br>\n                <div class=\"heading\">Phone number </div><div class=\"user_input_number\"> ").concat(phone_number_value, "</div>\n                <br><br>\n                <h2>Skills</h2><br>\n                ").concat(skill_list.map(function (e, i) {
             if (e !== ",") {
                 return "<div class=\"user_input_skills skill_no_".concat(i + 1, "\"> ").concat(e, " </div>");

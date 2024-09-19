@@ -45,10 +45,10 @@
                 </tr>
                 <tr class="matriculation education_1 education">
                     <td class="level">Matriculation: </td>
-                    <td><input class="matriculation_field field" type="text"></td>
-                    <td><input class="matriculation_grade grade" type="text"></td>
-                    <td><input class="matriculation_institution institution" type="text"></td>
-                    <td><input class="matriculation_year year" type="text"></td>
+                    <td><input class="matriculation_field field" type="text" required></td>
+                    <td><input class="matriculation_grade grade" type="text" required></td>
+                    <td><input class="matriculation_institution institution" type="text" required></td>
+                    <td><input class="matriculation_year year" type="text" required></td>
                 </tr>
             </table>
             <br>
@@ -67,10 +67,10 @@
                     <th>Position</th>
                 </tr>
                 <tr class="experience_1 experiences">
-                    <td><input class="experience_workplace" type="text"></td>
-                    <td><input class="experience_year_from" type="text"></td>
-                    <td><input class="experience_year_to" type="text"></td>
-                    <td><input class="experience_position" type="text"></td>
+                    <td><input class="experience_workplace" type="text" required></td>
+                    <td><input class="experience_year_from" type="text" required></td>
+                    <td><input class="experience_year_to" type="text" required></td>
+                    <td><input class="experience_position" type="text" required></td>
                 </tr>
             </table>
             <br>
@@ -81,7 +81,7 @@
         <fieldset>
             <legend>Skills</legend>
             <div class="skills_inps">
-                <input class="skill_inp skill_inp_1" type="text" placeholder="Add skill">
+                <input class="skill_inp skill_inp_1" type="text" placeholder="Add skill" required>
 
             </div>
             <button class="add_more_skill" type="button">+ Add Skills</button>
@@ -104,7 +104,7 @@
     <br><br>
 
     <br><br>
-    <div class="generated_resume" id="complete_resume">
+    <div class="generated_resume" id="complete_resume" style="display: none;">
     </div>
 
     <script src="script.js"></script>
