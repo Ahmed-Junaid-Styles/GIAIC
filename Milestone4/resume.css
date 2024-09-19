@@ -1,0 +1,603 @@
+* {
+  margin: 0;
+}
+:root{
+  font-size: 15px;
+}
+
+.resume {
+  width: 80vw;
+  margin: auto;
+  background-color: whitesmoke;
+  background-color: rgb(191, 221, 247);
+  height: 50vw;
+}
+.name_and_pic_container {
+  width: 100%;
+  background-color: peachpuff;
+}
+.name_and_pic {
+  width: 50%;
+  height: 16vw;
+  display: flex;
+  margin-left: 10%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.name_div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 3rem;
+  font-size: 2rem;
+}
+.profile_pic_div {
+  margin: auto;
+}
+.profile_pic {
+  height: 15vw;
+  width: 15vw;
+  border-radius: 50%;
+  border: 0.4rem solid white;
+}
+.resume_info {
+  display: flex;
+  justify-content: center;
+}
+.email_value {
+  font-size: 1.2rem;
+}
+.heading {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.personal_info_and_skills {
+  width: 18%;
+  color: white;
+  background-color: rgb(33, 182, 169);
+  height: 47.2vw;
+  padding: 2.7vw 4vw 0 4vw;
+  position: relative;
+  top: -18.6vw;
+  /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+.personal_info_and_skills > h2 {
+  font-size: 1.7rem;
+  color: black;
+  text-decoration: underline;
+}
+
+.education_and_experience {
+  padding: 2vw 0 0 2vw;
+  width: 54%;
+}
+.education_info > div {
+  padding-left: 2rem;
+}
+.education_info > div > div {
+  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
+  color: white;
+}
+.education_info > div > strong {
+  font-size: 1.5rem;
+}
+.education_and_experience > h2 {
+  text-decoration: underline;
+}
+.education_info {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 1rem;
+}
+.work_experience_info {
+  padding-left: 2rem;
+  font-size: 1.2rem;
+  color: white;
+}
+.work_experience_info > div > strong {
+  font-size: 1.5rem;
+  color: black;
+}
+.work_experiences {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 1rem;
+}
+
+.profile_pic_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media screen and (max-width: 1600px) {
+    .resume {
+      width: 80vw;
+      height: 59.7vw;
+    }
+    .name_and_pic {
+      height: 16vw;
+    }
+    .personal_info_and_skills {
+      height: 55.6vw;
+      padding: 4vw 5.3vw 0 3.4vw;
+      position: relative;
+      top: -19.2vw;
+    }
+    .name_div {
+      font-size: 1.9rem;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .resume {
+      width: 83vw;
+      height: 59vw;
+    }
+    .name_and_pic {
+      height: 15.5vw;
+    }
+    .personal_info_and_skills {
+      width: 19%;
+      height: 54.95vw;
+      padding: 4vw 6vw 0 3vw;
+      position: relative;
+      top: -19.1vw;
+    }
+    .name_div {
+      font-size: 1.8rem;
+    }
+    .profile_pic {
+      height: 16vw;
+      width: 16vw;
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    :root {
+      font-size: 15.5px;
+    }
+    .resume {
+      width: 84vw;
+      height: 63vw;
+    }
+    .name_and_pic {
+      height: 15.3vw;
+    }
+    .personal_info_and_skills {
+      width: 20%;
+      height: 58.9vw;
+      padding: 4vw 6.6vw 0 3vw;
+      position: relative;
+      top: -19.4vw;
+    }
+    .name_div {
+      font-size: 1.7rem;
+    }
+    .profile_pic {
+      height: 15vw;
+      width: 15vw;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    :root {
+      font-size: 15.5px;
+    }
+    .resume {
+      width: 86vw;
+      height: 65vw;
+    }
+    .name_and_pic {
+      height: 15.3vw;
+      width: 53%;
+    }
+    .personal_info_and_skills {
+      width: 21%;
+      height: 61vw;
+      padding: 4vw 5.6vw 0 2.3vw;
+      position: relative;
+      top: -19.8vw;
+    }
+    .name_div {
+      font-size: 1.6rem;
+    }
+    .profile_pic {
+      height: 14.8vw;
+      width: 14.8vw;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    :root {
+      font-size: 14.5px;
+    }
+    .resume {
+      width: 87vw;
+      height: 68vw;
+    }
+    .name_and_pic {
+      height: 15.2vw;
+      width: 54%;
+    }
+    .personal_info_and_skills {
+      width: 22%;
+      height: 64vw;
+      padding: 4vw 5vw 0 2.1vw;
+      position: relative;
+      top: -19.8vw;
+    }
+    .name_div {
+      font-size: 1.6rem;
+    }
+    .profile_pic {
+      height: 14.6vw;
+      width: 14.6vw;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    :root {
+      font-size: 13.8px;
+    }
+    .resume {
+      width: 88vw;
+      height: 71vw;
+    }
+    .name_and_pic {
+      height: 15.2vw;
+      width: 54%;
+    }
+    .personal_info_and_skills {
+      width: 23%;
+      height: 67vw;
+      padding: 4vw 5vw 0 2.1vw;
+      position: relative;
+      top: -20vw;
+    }
+    .name_div {
+      font-size: 1.6rem;
+    }
+    .profile_pic {
+      height: 14.5vw;
+      width: 14.5vw;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    :root {
+      font-size: 13px;
+    }
+    .resume {
+      width: 88vw;
+      height: 76vw;
+    }
+    .name_and_pic {
+      height: 16vw;
+      width: 54%;
+    }
+    .personal_info_and_skills {
+      width: 23%;
+      height: 70.7vw;
+      padding: 5.1vw 5vw 0 2.1vw;
+      position: relative;
+      top: -21.2vw;
+    }
+    .name_div {
+      font-size: 1.5rem;
+    }
+    .education_and_experience {
+      width: 55%;
+    }
+    .profile_pic {
+      height: 14.4vw;
+      width: 14.4vw;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    :root {
+      font-size: 12.3px;
+    }
+    .resume {
+      width: 90vw;
+      height: 77vw;
+    }
+    .name_and_pic {
+      height: 17vw;
+      width: 55%;
+    }
+    .personal_info_and_skills {
+      width: 25%;
+      height: 71vw;
+      padding: 6vw 5vw 0 2.1vw;
+      position: relative;
+      top: -22.6vw;
+    }
+    .name_div {
+      font-size: 1.5rem;
+    }
+    .education_and_experience {
+      width: 54%;
+    }
+    .profile_pic {
+      height: 14.35vw;
+      width: 14.35vw;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    :root {
+      font-size: 11.8px;
+    }
+    .resume {
+      width: 91vw;
+      height: 83vw;
+    }
+    .name_and_pic {
+      height: 17.4vw;
+      width: 58%;
+    }
+    .personal_info_and_skills {
+      width: 27%;
+      height: 76vw;
+      padding: 6.8vw 5.7vw 0 2.2vw;
+      position: relative;
+      top: -23.8vw;
+    }
+    .name_div {
+      font-size: 1.5rem;
+    }
+    .education_and_experience {
+      width: 53%;
+    }
+    .profile_pic {
+      height: 14.6vw;
+      width: 14.6vw;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    :root {
+      font-size: 11.4px;
+    }
+    .resume {
+      width: 92vw;
+      height: 82vw;
+    }
+    .name_and_pic {
+      height: 16vw;
+      width: 60%;
+    }
+    .personal_info_and_skills {
+      width: 28%;
+      height: 76vw;
+      padding: 6vw 6.2vw 0 2vw;
+      position: relative;
+      top: -21.6vw;
+    }
+    .name_div {
+      font-size: 1.5rem;
+    }
+    .education_and_experience {
+      width: 52%;
+    }
+    .profile_pic {
+      height: 14vw;
+      width: 14vw;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    :root {
+      font-size: 10.2px;
+    }
+    .resume {
+      width: 93vw;
+      height: 81vw;
+    }
+    .name_and_pic {
+      height: 16vw;
+      width: 63%;
+    }
+    .personal_info_and_skills {
+      width: 28.8%;
+      height: 75.8vw;
+      padding: 5vw 6.6vw 0 1.8vw;
+      position: relative;
+      top: -21.4vw;
+    }
+    .name_div {
+      font-size: 1.5rem;
+    }
+    .education_and_experience {
+      width: 51%;
+    }
+    .profile_pic {
+      height: 13.8vw;
+      width: 13.8vw;
+    }
+  }
+  @media screen and (max-width: 570px) {
+    :root {
+      font-size: 10px;
+    }
+    .resume {
+      width: 94vw;
+      height: 81vw;
+    }
+    .name_and_pic {
+      height: 15.6vw;
+      width: 63%;
+    }
+    .personal_info_and_skills {
+      width: 29.4%;
+      height: 75.5vw;
+      padding: 5.4vw 6.8vw 0 1.4vw;
+      position: relative;
+      top: -21.3vw;
+    }
+    .name_div {
+      font-size: 1.5rem;
+    }
+    .education_and_experience {
+      width: 50%;
+    }
+    .profile_pic {
+      height: 13.79vw;
+      width: 13.79vw;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    :root {
+      font-size: 9.5px;
+    }
+    .resume {
+      width: 95vw;
+      height: 83vw;
+    }
+    .name_and_pic {
+      height: 15vw;
+      width: 65%;
+    }
+    .personal_info_and_skills {
+      width: 30%;
+      height: 77.3vw;
+      padding: 5.4vw 7.2vw 0 1.2vw;
+      position: relative;
+      top: -20.5vw;
+    }
+    .name_div {
+      font-size: 1.5rem;
+    }
+    .education_and_experience {
+      width: 49%;
+    }
+    .profile_pic {
+      height: 13.4vw;
+      width: 13.4vw;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    :root {
+      font-size: 9.1px;
+    }
+    .resume {
+      width: 95.5vw;
+      height: 81vw;
+    }
+    .name_and_pic {
+      height: 14.2vw;
+      width: 67%;
+    }
+    .personal_info_and_skills {
+      width: 31%;
+      height: 75.4vw;
+      padding: 5.4vw 7.8vw 0 1.4vw;
+      position: relative;
+      top: -20.3vw;
+    }
+    .name_div {
+      font-size: 1.5rem;
+    }
+    .education_and_experience {
+      width: 48%;
+    }
+    .profile_pic {
+      height: 13vw;
+      width: 13vw;
+    }
+  }
+  @media screen and (max-width: 471px) {
+    :root {
+      font-size: 8.6px;
+    }
+    .resume {
+      width: 95.5vw;
+      height: 80vw;
+    }
+    .name_and_pic {
+      height: 13.3vw;
+      width: 68%;
+    }
+    .personal_info_and_skills {
+      width: 32%;
+      height: 74.6vw;
+      padding: 5.4vw 8.1vw 0 1.4vw;
+      position: relative;
+      top: -19.7vw;
+    }
+    .name_div {
+      font-size: 1.5rem;
+    }
+    .education_and_experience {
+      width: 48%;
+    }
+    .profile_pic {
+      height: 12.8vw;
+      width: 12.8vw;
+    }
+  }
+  
+  @media screen and (max-width: 441px) {
+    :root {
+      font-size: 8.3px;
+    }
+    .resume {
+      width: 95.5vw;
+      height: 84vw;
+    }
+    .name_and_pic {
+      height: 12.6vw;
+      width: 71%;
+    }
+    .personal_info_and_skills {
+      width: 32%;
+      height: 78vw;
+      padding: 5.4vw 8.1vw 0 1.4vw;
+      position: relative;
+      top: -18.5vw;
+    }
+    .name_div {
+      font-size: 1.5rem;
+    }
+    .education_and_experience {
+      width: 48%;
+    }
+    .profile_pic {
+      height: 12.6vw;
+      width: 12.6vw;
+    }
+  }
+  @media screen and (max-width: 401px) {
+    :root {
+      font-size: 7.4px;
+    }
+    .resume {
+      width: 95.5vw;
+      height: 84vw;
+    }
+    .name_and_pic {
+      height: 12.2vw;
+      width: 65%;
+    }
+    .personal_info_and_skills {
+      width: 32%;
+      height: 78vw;
+      padding: 5.8vw 8.1vw 0 1.4vw;
+      position: relative;
+      top: -18.9vw;
+    }
+    .name_div {
+      font-size: 1.5rem;
+    }
+    .education_and_experience {
+      width: 48%;
+    }
+    .profile_pic {
+      height: 10vw;
+      width: 10vw;
+    }
+    .profile_pic {
+      height: 11.2vw;
+    }
+    .name_div {
+      width: 0.1rem;
+    }
+  }
+  

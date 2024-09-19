@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="resume.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="invoice">
+        <div id="resume">
+            <div class="generated_resume" id="complete_resume">
+
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <center>
+        <button class="edit_resume_btn resume_btns" type="button">Edit Resume</button>
+    </center>
+
+    <script>
+        let HTML = localStorage.getItem("HTML")
+        let resume = document.getElementById("complete_resume")
+        resume.innerHTML = HTML
+
+        let edit_btn = document.querySelector(".edit_resume_btn")
+        let user_inp_tags = document.querySelectorAll(".value_from_user_input")
+
+        edit_btn.addEventListener("click", ()=>{
+            let username = document.querySelector(".user_input_name").innerHTML
+            let useremail = document.querySelector(".user_input_email").innerHTML
+            let usernumber = document.querySelector(".user_input_number").innerHTML
+
+            
+            localStorage.setItem("info", true)
+            localStorage.setItem("name", username)
+            localStorage.setItem("email", useremail)
+            localStorage.setItem("number", usernumber)
+
+            document.location.href = "index.html"
+
+        })
+
+
+    </script>
+
+</body>
+
+</html>
